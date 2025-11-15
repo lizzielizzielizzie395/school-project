@@ -1,0 +1,157 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body{
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(#031070,#65015d) ;
+    color: white; 
+    text-shadow: 1px 1px  #c500b5;
+    animation: fadeIn 0.5s ease-in-out;
+}
+    @keyframes fadeIn {
+        from {
+            opacity: 0;
+        }
+        to {
+            opacity: 1;
+        }
+    }
+
+
+header{
+    background: linear-gradient(#010f76, #2b0128) ;
+    padding: 15px;
+    text-align: center;
+    margin: 0;
+    border-bottom-style: dotted;
+    border-color: #9504a3;
+}
+
+.headlogo{
+    border-top-style: dotted; 
+    border-bottom-style: dotted;
+    border-left-style: dotted;
+    border-right-style: dotted;
+    border-color: #ff03ea;
+    box-shadow: 2px 2px 10px #ff03ea;
+    border-radius: 10px;
+    border-width: 3px; 
+    padding: 15px;
+    width:500px;
+    text-align: center;
+    margin: 10px auto;
+}
+
+.line{
+    background-color:#c500b5;
+    width: 1050px;
+    height: 1px;
+    margin: 20px auto;
+    box-shadow: 2px 6px 10px #ff03ea;
+    border-color: #ff03ea;
+}
+
+nav a{
+   display: inline-block;       /* ლინკები პატარა ბლოკებად იქცეს */
+    padding: 10px 20px;          /* ღილაკის შიგნით დაშორება ტექსტისა და ჩარჩოს შორის */
+    margin: 10px;                 /* ღილაკებს შორის დაშორება */
+    border: 2px solid #ff03ea;   /* მწვანე ჩარჩო */
+    border-radius: 8px;          /* ოვალური კუთხეები */
+    background-color: #0439a2;   /* მუქი ფონი */
+    color: #f9f9f9;              /* ტექსტის ფერი */
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 18px;
+
+    border-top-style: dotted; 
+    border-bottom-style: dotted;
+    border-color: #ff03ea;
+    box-shadow: 1px 1px 10px #ff03ea;
+    border-radius: 100px;
+    border-width: 2px; 
+    cursor:pointer;
+    animation: slideDown 0.6s ease-out;
+}
+
+@keyframes slideDown {
+    from {
+        transform: translateY(-100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+    
+    }    
+}
+nav a:hover {
+    background-color: #db02c9;   /* მაუსის გადატარებისას მწვანე ფონი */
+    color: white;                /* მაუსის გადატარებისას თეთრი ტექსტი */
+}
+
+.headimage{
+    border-top-style: dotted; 
+    border-bottom-style: dotted;
+    border-color: #ff03ea;
+    box-shadow: 1px 1px 10px #ff03ea;
+}
+
+.head {
+    display: block;
+    padding: 10px;
+    margin: 10px auto;
+    max-width: 500px;
+    text-align: center;
+    border: 5px solid #031758;
+    border-radius: 8px;
+    background: linear-gradient(#031758,#0208c1, #031758) ;
+    color: #ffffff;
+    font-size: 29px ;
+    box-shadow: 1px 1px 10px #0208c1;
+}
+
+
+.registration {
+    display: block;
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 500px;
+    border: 5px solid #0208c1;
+    border-radius: 10px;
+    background: linear-gradient(#031758,#0208c1, #031758) ;
+    color: #ffffff;
+    font-size: 18px;
+    box-shadow: 1px 1px 10px #0208c1;
+}
+
+
+.inputs {
+    background-color: #031758;
+    border: 2px solid #0208c1;
+    border-radius: 8px;
+    padding: 10px ;
+    margin-top: 10px;
+}
+
+.submit {
+    display: block;
+    width: 400px;
+    padding: 12px;
+    margin: 10px auto;
+    border: 3px solid #031758;
+    border-radius: 8px;
+    background-color: #0208c1;
+    color: #ffffff;
+    font-size: 18px;
+    font-weight: bold;
+    box-shadow: 1px 1px 10px #031758;
+}
+
+footer {
+    background: #0f1a12;
+    text-align: center;
+    padding: 7px;
+    font-size: 12px;
+    color: #9fbfae;
+}

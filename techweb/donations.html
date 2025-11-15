@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+    <head>
+        <title>donations</title>
+        <link rel="stylesheet" href="donations.css">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+
+    <body>
+
+        <header>
+            <h1 class="headlogo"><i>TechPlay - technology & games</i></h1> 
+            <br>
+            <img class="headimage" src="techplay.png" width="900px">
+
+            <div class="line"></div>
+        
+            <nav>
+                <a href="mainpage.html">Main Menu</a>
+            </nav>
+        </header>
+
+        <div class="container">
+            <h1>Support TechPlay</h1>
+            <p> Donations help us buy equipment, improve our space, and support student activities.</p>
+
+            <h2>Your Impact</h2>
+            <div class="impact-grid">
+                <div class="impact-item">
+                    <h3>🎮 Equipment</h3>
+                    <p>Help us upgrade our systems and Computers, laptops, and consoles</p>
+                </div>
+                <div class="impact-item">
+                    <h3>💻 Games and programs</h3>
+                    <p>Buy the necessary games and programming applications.</p>
+                </div>
+                <div class="impact-item">
+                    <h3>🏆 Tournaments</h3>
+                    <p>Support tournaments and gaming events</p>
+                </div>
+                <div class="impact-item">
+                    <h3>📚 Resources</h3>
+                    <p>Provide learning materials and software licenses</p>
+                </div>
+
+                <div class="impact-item">
+                    <h3>✨Club Space & Comfort</h3>
+                    <p>Tables, chairs,decorations and snacks</p>
+                </div>
+
+                <div class="impact-item">
+                    <h3>🛠️Maintenance & Safety</h3>
+                    <p>Provide learning materials and software licenses</p>
+                </div>
+            </div>
+
+            
+            <h2>Select Donation Amount</h2>
+            <div class="amount">
+                <div class="amount-options">
+                    <button class="amount-btn" onclick="selectAmount(10, this)">$10</button>
+                    <button class="amount-btn" onclick="selectAmount(25, this)">$25</button>
+                    <button class="amount-btn" onclick="selectAmount(50, this)">$50</button>
+                    <button class="amount-btn" onclick="selectAmount(100, this)">$100</button>
+                </div>
+        
+
+                <input type="number" class="custom-amount" placeholder="Or enter custom amount"
+                    oninput="customAmountChanged(this)"><br>
+            </div>
+
+            <button class="donate-btn">Donate Now</button>
+
+        </div>
+
+
+        <footer>
+            <p>© 2025 Club "TechPlay". All rights reserved</p>
+        </footer>
+
+        <script>
+
+            function selectAmount(amount, button) {
+                selectedAmount = amount;
+
+                // Remove active state from all preset buttons
+                const buttons = document.querySelectorAll('.amount-btn');
+                buttons.forEach(btn => btn.classList.remove('active'));
+
+                // Add active class to the clicked one
+                button.classList.add('active');
+
+                // Clear custom amount when preset is selected
+                document.querySelector('.custom-amount').value = "";
+            }
+
+            function customAmountChanged(input) {
+                // Clear selection on preset buttons
+                const buttons = document.querySelectorAll('.amount-btn');
+                buttons.forEach(btn => btn.classList.remove('active'));
+
+                // Update selected amount
+                selectedAmount = parseFloat(input.value) || 0;
+            }
+        </script>
+
+    </body>
+</html>

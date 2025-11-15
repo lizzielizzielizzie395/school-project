@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+    <head>
+        <title>registration</title>
+        <link rel="stylesheet" href="registration.css">
+    </head>        
+    
+    <body>
+        <header>
+            <h1 class="headlogo"><i>TechPlay - technology & games</i></h1> 
+            <br>
+            <img class="headimage" src="techplay.png" width="1000">
+
+            <div class="line"></div>
+        
+            <nav>
+                <a href="mainpage.html">Main Menu</a>
+            </nav>
+        </header>
+
+
+        <h1 class="head">Become our member</h1>
+
+        <form>
+            <div class="registration">
+                <div class="inputs">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required><br>
+                </div>
+
+                <div class="inputs">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required placeholder="example@domain.com" ><br>  
+                </div>
+
+                <div class="inputs">
+                    <label for="password">Password:</label>
+                    <input type="password" id="password" name="password" required placeholder="•••••••••"><br>
+                </div>
+
+                <div class="inputs">
+                    <label for="tel">Tel. number:</label>
+                    <input type="tel" id="tel" name="telephone" required placeholder="+995 •••••••••"><br>
+                </div>
+
+                <div class="inputs">
+                    <label>Gender:</label>
+                    <input type="radio" id="male" name="gender" value="male" required>
+                    <label for="male">Male</label>
+                    <input type="radio" id="female" name="gender" value="female">
+                    <label for="female">Female</label><br>
+                </div>
+
+                <div class="inputs">
+                    <label for="age">Age:</label>
+                    <input type="number" id="age" name="age" min="5" max="100" required><br>
+                </div>
+            </div>
+
+            <button type="submit" class="submit">Sign up</button>
+        </form>
+
+        <footer>
+            <p>© 2025 Club "TechPlay". All rights reserved</p>
+        </footer>
+        
+    </body>
+
+
+</html>

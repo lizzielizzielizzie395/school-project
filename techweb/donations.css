@@ -1,0 +1,231 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body{
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(#031070,#65015d) ;
+    color: white; 
+    text-shadow: 1px 1px  #c500b5;
+    animation: fadeIn 0.5s ease-in-out;
+}
+    @keyframes fadeIn {
+        from {
+            opacity: 0;
+        }
+        to {
+            opacity: 1;
+        }
+    }
+
+
+header{
+    background: linear-gradient(#010f76, #2b0128) ;
+    padding: 15px;
+    text-align: center;
+    margin: 0;
+    border-bottom-style: dotted;
+    border-color: #9504a3;
+}
+
+.headlogo{
+    border-top-style: dotted; 
+    border-bottom-style: dotted;
+    border-left-style: dotted;
+    border-right-style: dotted;
+    border-color: #ff03ea;
+    box-shadow: 2px 2px 10px #ff03ea;
+    border-radius: 10px;
+    border-width: 3px; 
+    padding: 15px;
+    width:500px;
+    text-align: center;
+    margin: 10px auto;
+}
+
+.line{
+    background-color:#c500b5;
+    width: 1050px;
+    height: 1px;
+    margin: 20px auto;
+    box-shadow: 2px 6px 10px #ff03ea;
+    border-color: #ff03ea;
+}
+
+nav a{
+   display: inline-block;       /* ლინკები პატარა ბლოკებად იქცეს */
+    padding: 10px 20px;          /* ღილაკის შიგნით დაშორება ტექსტისა და ჩარჩოს შორის */
+    margin: 10px;                 /* ღილაკებს შორის დაშორება */
+    border: 2px solid #ff03ea;   /* მწვანე ჩარჩო */
+    border-radius: 8px;          /* ოვალური კუთხეები */
+    background-color: #0439a2;   /* მუქი ფონი */
+    color: #f9f9f9;              /* ტექსტის ფერი */
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 18px;
+
+    border-top-style: dotted; 
+    border-bottom-style: dotted;
+    border-color: #ff03ea;
+    box-shadow: 1px 1px 10px #ff03ea;
+    border-radius: 100px;
+    border-width: 2px; 
+    cursor:pointer;
+    animation: slideDown 0.6s ease-out;
+}
+
+    @keyframes slideDown {
+        from {
+            transform: translateY(-100%);
+            opacity: 0;
+        }
+        to {
+            transform: translateY(0);
+       
+        }    
+    }
+
+nav a:hover {
+    background-color: #db02c9;   /* მაუსის გადატარებისას მწვანე ფონი */
+    color: white;                /* მაუსის გადატარებისას თეთრი ტექსტი */
+}
+
+.headimage{
+    border-top-style: dotted; 
+    border-bottom-style: dotted;
+    border-color: #ff03ea;
+    box-shadow: 1px 1px 10px #ff03ea;
+}
+
+/* Main content styles */
+.container {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 0 10px;
+    background-color: #0439a2;   
+    padding: 20px;
+    border-radius: 8px;
+}
+
+
+h1{
+    color: white;
+    text-shadow: 1px 1px  #c500b5;
+
+}
+
+h2 {
+    text-shadow: 1px 1px  #c500b5;
+    color: white;
+}
+
+h3 {
+    text-shadow: 1px 1px  #c500b5;
+    color: white;
+}
+p {
+    
+    color: white;
+}
+
+/* Donation amount buttons */
+
+.amount{
+    border: 5px solid #030653;
+    padding:10px;
+    margin:auto;
+    background-color: #010f76;
+}
+.amount-options {
+    display: flex;
+    gap: 1rem;
+    margin: 1.5rem 0;
+}
+
+.amount-btn {
+    padding: 0.8rem 1.5rem;
+    border: 2px solid #db02c9;
+    color: #db02c9;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    flex: 0.5 ;
+    min-width: 80px;
+
+}
+
+.amount-btn:hover {
+    background-color: #ff03ea;
+    color: white;
+   
+}
+
+.amount-btn.active {
+    background-color: #ff03ea;
+    color: white;
+    border: 2px solid #ffffff;
+}
+
+/* Custom amount input */
+.custom-amount {
+    width: 50%;
+    padding: 0.8rem;
+    border: 2px solid #ddd;
+    border-radius: 5px;
+    font-size: 1rem;
+    margin-bottom: 1.5rem;
+}
+
+/* Donate button */
+.donate-btn {
+    width: 50%;
+    padding: 1rem;
+    background-color: #002aff;
+    color: white;
+    border: none;
+    font-style: none;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    margin-top: 1rem;
+    margin-left: 12rem;
+
+}
+
+.donate-btn:hover {
+    background-color: #032dffa6;
+}
+
+/* Impact section */
+.impact-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); 
+        /*grid-temp...- tells CSS how many columns your grid should have and how wide each column should be. 
+        repeat--Repeat this column pattern many times.”
+        auto-fit --Fit as many columns as possible in the row (depending on screen size).”
+        minmax....-Minimum width: 200px
+            → A column will never shrink smaller than 200px.
+
+        Maximum width: 1fr(fraction)
+            → If there's extra space, the column grows to fill it (like flexible elastic).*/
+    gap: 1rem;
+    margin: 2rem 0;
+}
+
+.impact-item {
+    background-color: #030653;
+    padding: 10px;
+    border-radius: 5px;
+    text-align: center;
+}
+
+footer {
+    background: #0f1a12;
+    text-align: center;
+    padding: 7px;
+    font-size: 12px;
+    color: #9fbfae;
+    text-shadow: none;
+}
+
